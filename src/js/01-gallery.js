@@ -6,6 +6,7 @@ import "simplelightbox/dist/simple-lightbox.min.css";
 const galleryBox = document.querySelector(".gallery");
 const galleryMarkap = createGaleryMarkup(galleryItems);
 
+
 galleryBox.insertAdjacentHTML("beforeend", galleryMarkap);
 
 function createGaleryMarkup(galleryItems) {
