@@ -63,3 +63,58 @@ function dataOutputAfterReboot(){
     } 
     
 }
+
+
+
+
+// import throttle from 'lodash.throttle';
+
+// const FEEDBACKKEY = 'feedback-form-state';
+// let feedbackFormState = {
+//   // clear() {
+//   //   keys = Object.keys(this);
+//   //   keys.forEach(key => {
+//   //     // clear all values from object, eccept this function
+//   //     if (key !== 'clear') {
+//   //       delete this[key];
+//   //     }
+//   //   });
+//   // },
+// };
+
+// const refs = document.querySelector('.js-feedback-form');
+
+// refs.addEventListener('submit', onFormSubmit);
+// refs.addEventListener('input', throttle(onFormInput, 500));
+
+// populateContent();
+
+// function onFormSubmit(evt) {
+//   evt.preventDefault();
+
+//   console.log(feedbackFormState);
+//   evt.currentTarget.reset();
+//   localStorage.removeItem(FEEDBACKKEY);
+//   feedbackFormState = {};
+// }
+
+// function onFormInput(evt) {
+//   feedbackFormState[evt.target.name] = evt.target.value;
+//   localStorage.setItem(FEEDBACKKEY, JSON.stringify(feedbackFormState));
+// }
+
+// function populateContent() {
+//   const feedback = JSON.parse(localStorage.getItem(FEEDBACKKEY));
+//   if (!feedback) {
+//     return;
+//   }
+//   //   console.log('feedback', feedback);
+
+//   const feedbackKeys = Object.keys(feedback);
+//   feedbackKeys.forEach(key => {
+//     const formElement = refs.querySelector(`*[name=${key}]`);
+//     // console.log(formElement);
+//     formElement.value = feedback[key];
+//     feedbackFormState[key] = feedback[key];
+//   });
+// }
