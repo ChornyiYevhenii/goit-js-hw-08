@@ -46,11 +46,11 @@ function recordsData(data){
 function checkOfEnteredData(){
 if (refs.textarea.value){
     data.message = refs.textarea.value;
-    localStorage.setItem("feedback-form-state", JSON.stringify(data))
+    // localStorage.setItem("feedback-form-state", JSON.stringify(data))
 }
 if (refs.input.value){
     data.email = refs.input.value;
-    localStorage.setItem("feedback-form-state", JSON.stringify(data))
+    // localStorage.setItem("feedback-form-state", JSON.stringify(data))
 }
 }
 
